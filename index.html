@@ -7,87 +7,114 @@
     <meta name="keywords" content="html, course, css, tags"> 
     <meta name="descriprtion" content="Этот сайт о вязании крючком">
     <title>Обо мне</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <img src="images/cat.jpg" alt="Не найдено" width="200">
-    <h1>Ольга</h1>
-    <hr>
+   <div class="container"><div class="info">
+        
+        <div class="info">
+            <img class="avatar" src="images/cat.jpg" alt="Не найдено" width="200">
+    
+           
+            <div class="info-text">    
+                <h1>Ольга</h1>
+                <hr>
+                <p> Я закончила 4 курс УлГТУ.</p>
+                <p> Мне нравится вязать, заниматься спортом и слушать музыку. </p>    
+                <div class="card-link_soсial">
+                    <h2> Ссылки на соц. сети</h2>
+                <p> 
+                    <a href="https://vk.com/id156937241" target="_blank">Вконтакте</a> | 
+                    <a href="https://www.instagram.com/" target="_blank">Instagram</a> |
+                    <a href="https://www.youtube.com/" target="_blank">YouTube</a>
+                </p>    
+            </div>
+          
+        </div>
 
-    <p> Я закончила 4 курс <strong> УлГТУ </strong>.</p>
-    <p> Мне нравится <em>вязать, заниматься спортом и слушать музыку.</em> </p>
+        </div>
 
-        <h2> Ссылки на соц. сети</h2>
-     <p> 
-         <a href="https://vk.com/id156937241" target="_blank">Вконтакте</a> | 
-         <a href="https://www.instagram.com/" target="_blank">Instagram</a> |
-         <a href="https://www.youtube.com/" target="_blank">YouTube</a>
-     </p>   
 
-     <h2> Мои хобби </h2>
+    </div>  
+    <div class="card contact">
+        <h2> Связаться со мной </h2>
 
-     <ul>
-         <li> Вязать</li>
-         <li> Собирать пазлы</li>
-         <li> Программировать</li>
-         <li> Раскрашивать картины по номерам</li>
-     </ul>
+        <form class="form" action="/">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="name"> Ваше имя:</label>
+                    <input type="text" id="name" placeholder="Введите имя">
+                    </div>
+            
+                    <div class="form-group">
+                    <label for="email"> Ваш email:</label>
+                    <input type="email" id="email" placeholder="Введите email">
+                    </div>
+            </div>        
+                <div class="form-group">
+                <label for="mess"> Ваше сообщение:</label>
+                <br>
+                <textarea name="message" id="mess" cols="30" rows="10" placeholder="Введите сообщение..."></textarea>
+            </div>
+    
+        <div>
+            <input class="btn" type="submit" value="Отправить!">
+        </div>    
+        </form>
+    </div>
+    
+    <div class="card hobby">
+        <h2> Мои хобби </h2>
 
-     <h2> Опыт практики</h2>
+        <ul class="list">
+            <li> Вязать</li>
+            <li> Собирать пазлы</li>
+            <li> Программировать</li>
+            <li> Раскрашивать картины по номерам</li>
+        </ul>
 
-     <table>
-         <head>
-             <tr>
+    </div>
+
+    <div class="card practie_exper">
+        <h2> Опыт практики</h2>
+
+        <table class="table-pract">
+            <head>
+                <tr>
                 <th>Название</th>
                 <th>Язык</th>
                 <th>Год</th>
-             </tr>
-         </head>
-         <tbody>
-             <tr>
+                </tr>
+            </head>
+            <tbody>
+                <tr>
                 <td> Кафедра УлГТУ</td>
                 <td> С++ </td>
                 <td> 2019 </td>
-             </tr>
-             <tr>
+                </tr>
+                <tr>
                 <td> MediaSoft</td>
                 <td> Python</td>
                 <td> 2020 </td>
-             </tr>
-             <tr>
+                </tr>
+                <tr>
                 <td> MadBrains </td>
                 <td> Java</td>
                 <td> 2021 </td>
-             </tr>
-             <tr>
+                </tr>
+                <tr>
                 <td> MediaSoft</td>
                 <td> C#</td>
                 <td> 2021 </td>
-             </tr>
-         </tbody>
-     </table>
-     <h2> Связаться со мной </h2>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
-     <form action="/">
-        <div>
-            <label for="name"> Ваше имя:</label>
-            <input type="text" id="name" placeholder="Введите имя">
-         </div>
+   
+</div>
     
-         <div>
-            <label for="email"> Ваш email:</label>
-            <input type="email" id="email" placeholder="Введите email">
-         </div>
-    
-         <div>
-            <label for="mess"> Ваше сообщение:</label>
-            <br>
-            <textarea name="message" id="mess" cols="30" rows="10" placeholder="Введите сообщение..."></textarea>
-        </div>
-    
-        <div>
-            <input type="submit" value="Отправить!">
-        </div>    
-     </form>
+     
 
 </body>
 </html>
